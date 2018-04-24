@@ -1,4 +1,23 @@
 {
+  "main": "index.html",
   "name": "YouTube-Downloader-by-TheBumpaster",
-  "main": "index.html"
+  "description": "YouTube Downloader for Desktop",
+  "version": "1.1.0",
+  "keywords": [ "youtube", "downloader", "thebumpaster" ],
+  "window": {
+    "title": "YouTube Downloader",
+    "icon": "icon.png",
+    "toolbar": true,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 1024,
+    "max_height": 768
+  },
+  "webkit": {
+    "plugin": true
+  }
 }
