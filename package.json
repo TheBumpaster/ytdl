@@ -7,11 +7,10 @@
   "window": {
     "title": "YouTube Downloader",
     "icon": "icon.png",
-    "toolbar": true,
-    "frame": false,
+    "toolbar": false,
+    "frame": true,
     "width": 800,
     "height": 500,
-    "position": "mouse",
     "min_width": 400,
     "min_height": 200,
     "max_width": 1024,
