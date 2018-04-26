@@ -28,12 +28,19 @@
           <h1>YouTube Downloader <small> thebumpaster </small></h1>
           <br/>
           <p> Paste your download link here: </p>
-          <div class="form-group">
-            <form action="#">
-              <input style="width:80%;" class="form-controll" type="text" name="video" placeholder="https://www.youtube.com/watch?v=7OIvHJ0RvJk">
-              <input type="submit" name="submit" style="display:none">
+
+            <form action="#" class="form-inline">
+              <div class="form-group" style="width:100%;">
+                <input style="width:80%;" class="form-control" type="text" name="video" placeholder="https://www.youtube.com/watch?v=7OIvHJ0RvJk">
+                <select class="form-control" name="format" id="format" style="width:20%;">
+                  <option value="flv">flv</option>
+                  <option value="mp4">mp4</option>
+                  <option value="audioonly">mp3</option>
+                </select>
+                <input type="submit" name="submit" style="display:none">
+              </div>
             </form>
-          </div>
+
         </div>
     </div>
 
