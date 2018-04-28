@@ -17,6 +17,7 @@
     const path = require('path');
     const fs = require('fs');
     const ytdl = require('ytdl-core');
+    const ffmpeg = require('fluent-ffmpeg');
 
 
     </script>
@@ -35,7 +36,7 @@
                 <select class="form-control" name="format" id="format" style="width:20%;">
                   <option value="flv">flv</option>
                   <option value="mp4">mp4</option>
-                  <option value="audioonly" disabled>mp3</option>
+                  <option value="audioonly">mp3</option>
                 </select>
                 <input type="submit" name="submit" style="display:none">
               </div>

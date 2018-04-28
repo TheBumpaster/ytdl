@@ -3,7 +3,11 @@
   "name": "YouTube-Downloader-by-TheBumpaster",
   "description": "YouTube Downloader for Desktop",
   "version": "1.1.0",
-  "keywords": [ "youtube", "downloader", "thebumpaster" ],
+  "keywords": [
+    "youtube",
+    "downloader",
+    "thebumpaster"
+  ],
   "window": {
     "title": "YouTube Downloader",
     "icon": "icon.png",
@@ -18,5 +22,9 @@
   },
   "webkit": {
     "plugin": true
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^0.20.2"
   }
 }
