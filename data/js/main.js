@@ -27,12 +27,15 @@ $(document).ready(function() {
         audio.once('response', () => {
           starttime = Date.now();
           console.log("Download started at: " + starttime);
+          $('#results').append("<li><span>"+data.title+"</span> <a id='"+data.video_id+"' href='downloads/"+data.video_id+".mp3' download='"+data.title+".mp3' ><button class='btn btn-outline-info btn-sm' disabled>Save</button></a> </li>");
+
         });
         audio.on('progress', (chunkLength, downloaded, total) => {
           const floatDownloaded = downloaded / total;
           const downloadedMinutes = (Date.now() - starttime) / 1000 / 60;
           readline.cursorTo(process.stdout, 0);
           console.log((floatDownloaded*100).toFixed(2) + '% downloaded!');
+          $('#'+data.video_id+'').html('<button class="btn btn-outline-danger btn-sm" disabled>'+(floatDownloaded*100).toFixed(2)+'%</button>');
           console.log((downloaded / 1024 / 1024).toFixed(2) + 'MB of ' + (total / 1024 / 1024).toFixed(2) + 'MB ');
           console.log((downloadedMinutes/floatDownloaded - downloadedMinutes).toFixed(2) + "minutes");
           var bar_value = floatDownloaded * 35;
@@ -40,9 +43,9 @@ $(document).ready(function() {
           readline.moveCursor(process.stdout, 0, -1);
         });
         audio.on('end', () => {
-          $('#results').append("<li>"+data.title+" - <a href='downloads/"+data.video_id+".mp3' download='"+data.title+".mp3' >Save</a></li>");
+          $('#'+data.video_id+'').html('<button class="btn btn-outline-info btn-sm">Save</button>');
           $('.progress-bar').css({width: '0em'});
-          console.log('End of file write stream.');
+          console.log('End of audio write stream.');
         });
 
     });
@@ -59,21 +62,23 @@ $(document).ready(function() {
         video.once('response', () => {
           starttime = Date.now();
           console.log("Download started at: " + starttime);
+          $('#results').append("<li><span>"+data.title+"</span> <a id='"+data.video_id+"' href='downloads/"+data.video_id+".mp3' download='"+data.title+".mp3' ><button class='btn btn-outline-info btn-sm' >Save</button></a> </li>");
+
         });
         video.on('progress', (chunkLength, downloaded, total) => {
           const floatDownloaded = downloaded / total;
           const downloadedMinutes = (Date.now() - starttime) / 1000 / 60;
           readline.cursorTo(process.stdout, 0);
           console.log((floatDownloaded*100).toFixed(2) + '% downloaded!');
+          $('#'+data.video_id+'').html('<button class="btn btn-outline-danger btn-sm" disabled>'+(floatDownloaded*100).toFixed(2)+'%</button>');
           console.log((downloaded / 1024 / 1024).toFixed(2) + 'MB of ' + (total / 1024 / 1024).toFixed(2) + 'MB ');
           console.log((downloadedMinutes/floatDownloaded - downloadedMinutes).toFixed(2) + "minutes");
-          var bar_value = floatDownloaded * 35;
+          var bar_value = floatDownloaded * 100;
           $('.progress-bar ').css({width: bar_value +"em"});
           readline.moveCursor(process.stdout, 0, -1);
         });
         video.on('end', () => {
-          $('#results').append("<li>"+data.title+" - <a href='downloads/"+data.video_id+"."+informat+"' download='"+data.title+"."+informat+"' >Save</a></li>");
-          $('.progress-bar').css({width: '0em'});
+          $('#'+data.video_id+'').html('<button class="btn btn-outline-info btn-sm">Save</button>');
           console.log('End of file write stream.');
         });
 

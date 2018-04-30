@@ -2,3 +2,40 @@ body {
   margin:0;
   padding:0;
 }
+
+#results {
+  list-style-type: none;
+  max-width: 100%;
+  width:99%;
+}
+
+#results li {
+
+  width:99%;
+
+  background: #ffffff;
+  padding-top:1.2em;
+  padding-bottom:1.2em;
+
+}
+
+#results li:nth-child(2n+0) {
+  background: #f9f9f9;
+}
+
+#results li span {
+  margin-right: 1em;
+  padding-left:5px;
+
+  max-width: 70%;
+}
+
+#results li a {
+
+  color:#ffffff;
+
+}
+
+#results li a:hover, a:active {
+  color:#f9f9f9;
+}
