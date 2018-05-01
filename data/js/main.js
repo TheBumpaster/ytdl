@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  //
-
+  // Download form
   $('form').on('submit', function(e) {
     e.preventDefault();
 
@@ -87,4 +86,10 @@ $(document).ready(function() {
 
   });
 
+
+  //Save button
+  $('button').on('click', function() {
+    $(this).removeClass('btn-outline-info');
+    $(this).addClass('btn-outline-danger');
+  });
 });
