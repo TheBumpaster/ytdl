@@ -85,11 +85,10 @@ $(document).ready(function() {
     }
 
   });
+});
 
-
-  //Save button
-  $('button').on('click', function() {
-    $(this).removeClass('btn-outline-info');
-    $(this).addClass('btn-outline-danger');
-  });
+//Save button
+$('button').on('click', function() {
+  $(this).removeClass('btn-outline-info');
+  $(this).addClass('btn-outline-danger');
 });
