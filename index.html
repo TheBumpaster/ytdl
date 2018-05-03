@@ -7,7 +7,9 @@
 
     <link rel="stylesheet" href="data/css/gsdk.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="data/css/style.css">
+    <link rel="stylesheet" href="data/css/demo.css">
 
   </head>
 
@@ -24,48 +26,204 @@
     </script>
 
     <div class="col col-sm-12 col-lg-12">
+      <div class="row">
+          <div class="wrapper">
+          <!-- Wave bg-->
+          <div class="wave-container">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+          </div>
+          <div class="line"></div>
+          <br /><br /><br/><br/>
+          <div class="text-wrap">
+            <div class="text"><span>D</span><span>O</span><span>W</span><span>N</span><span>L</span><span>O</span><span>A</span><span>D</span>
+              <div class="main-btn_wrapper"><i class="main-btn fa fa-history" aria-hidden="true"></i></div>
+            </div>
+          </div>
 
-      <div class="col col-offset-3"
-        <div class="row">
-        <div class="content-fluid" align="center">
-
-          <h1>YouTube <br /><small> Downloader </small></h1>
-          <br/>
-
-            <form action="#" class="form">
-              <div class="form-group" style="width:100%;">
-                <input style="width:100%;" class="form-control" type="text" name="video" placeholder="https://www.youtube.com/watch?v=7OIvHJ0RvJk">
-
-                <select class="form-control form-control-sm" style="width:15%;float:right;" name="format" id="format" >
-                  <option value="flv">flv</option>
-                  <option value="mp4">mp4</option>
-                  <option value="audioonly">mp3</option>
-                </select>
-
-                <input type="submit" name="submit" class="btn btn-danger" style="display:none;">
+          <div class="header">
+            <div class="burger-wrapper">
+              <div class="burger"></div>
+            </div>
+            <div class="logo-text">Listeners Playlist</div>
+            <div class="back_btn">
+              <div class="circle"></div>
+              <div class="text">Back</div>
+            </div>
+          </div>
+          <div class="nav">
+            <ul class="nav_main">
+              <li> <a class="nav_link">Home	</a></li>
+              <li> <a class="nav_link">Downloader</a></li>
+              <li> <a class="nav_link">Playlists</a></li>
+              <li> <a class="nav_link">Favourites</a></li>
+            </ul>
+            <div class="nav_divider"></div>
+            <ul class="nav_sub">
+              <li><a class="nav_link" href="">Help	</a></li>
+              <li><a class="nav_link" href="">Settings	</a></li>
+            </ul>
+          </div>
+          <div class="mini-player">
+            <div class="track_info_wrapper">
+              <div class="track_info">
+                <div class="thumb"></div>
+                <div class="info">
+                  <div class="title">Friday Comes</div>
+                  <div class="artist">Early</div>
+                </div>
               </div>
-            </form>
+            </div>
+            <div class="mini-player_btn_wrapper"><i class="btn-prev fa fa-step-backward" aria-hidden="true"></i>
+              <div class="btn-switch"><i class="btn-play fa fa-play" aria-hidden="true"></i><i class="btn-pause fa fa-pause" aria-hidden="true"></i></div><i class="btn-next fa fa-step-forward" aria-hidden="true"></i><i class="btn-open-player fa fa-list" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="dim"></div>
+          <div class="player" id="player">
+            <div class="playback_wrapper">
+              <div class="playback_blur"></div>
+              <div class="playback_thumb"></div>
+              <div class="playback_info">
+                <div class="title">Friday Comes</div>
+                <div class="artist">Early</div>
+              </div>
+              <div class="playback_btn_wrapper"><i class="btn-prev fa fa-step-backward" aria-hidden="true"></i>
+                <div class="btn-switch"><i class="btn-play fa fa-play" aria-hidden="true"></i><i class="btn-pause fa fa-pause" aria-hidden="true"></i></div><i class="btn-next fa fa-step-forward" aria-hidden="true"></i>
+              </div>
+              <div class="playback_timeline">
+                <div class="playback_timeline_start-time">00:31</div>
+                <div class="playback_timeline_slider">
+                  <div class="slider_base"></div>
+                  <div class="slider_progress"></div>
+                  <div class="slider_handle"></div>
+                </div>
+                <div class="playback_timeline_end-time">03:11</div>
+              </div>
+            </div>
+            <div class="list_wrapper">
+              <ul class="list">
+                <li class="list_item selected">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+                <li class="list_item">
+                  <div class="thumb"> </div>
+                  <div class="info">
+                    <div class="title">Friday Comes</div>
+                    <div class="artist">Early</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="page" id="curator">
+            <div class="curator_title_wrapper"><span>Links</span>
+              <div class="curator_line"></div>
+              <div class="curator_title">Downloader</div>
+              <div class="curator_line"></div><span>14</span>
+            </div>
+            <div class="curator_list">
+              <div class="curator_list_content">
+                <div class="connect_btn_wrapper item">
+                  <div class="connect_btn">
+                    <div class="connect_btn_text">Connect <br/>SoundCloud</div>
+                  </div>
+                </div>
+                <div class="curator_list_content_desc">Or Select <br/>a Listener of <br/>L.P.			</div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb"></div>
+                  <div class="info">
+                    <div class="name">Fantasy</div>
+                    <div class="desc">Sam</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-      <div class="clearfix"><br/></div>
-
-    <div class="col col-sm-12 col-lg-12">
-
-      <div class="row">
-        <ul class="content" id="results">
-
-        </ul>
-      </div>
-
-      <div class="row">
-        <div class="progress" style="height: 7.5px;">
-          <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-      
     </div>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -75,6 +233,9 @@
     <script src="data/js/gsdk-checkbox.js" type="text/javascript"></script>
     <script src="data/js/gsdk-radio.js" type="text/javascript"></script>
     <script src="data/js/get-shit-done.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js" type="text/javascript"></script>
+    <script src="data/js/player.js" type="text/javascript"></script>
     <script src="data/js/main.js" type="text/javascript"></script>
   </body>
 </html>

@@ -12,12 +12,12 @@
     "title": "YouTube Downloader",
     "icon": "icon.png",
     "toolbar": false,
-    "frame": true,
-    "width": 800,
-    "height": 500,
+    "frame": false,
+    "width": 1200,
+    "height": 700,
     "min_width": 400,
     "min_height": 200,
-    "max_width": 1024,
+    "max_width": 1200,
     "max_height": 768
   },
   "webkit": {
