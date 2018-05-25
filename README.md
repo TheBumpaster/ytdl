@@ -1,4 +1,4 @@
-# ytdl
+# YTDL
 YouTube Downloader on NodeJS for desktop
 
 ## NWJS
@@ -7,10 +7,18 @@ www.nwjs.io
 ## Install
 
 Download nwjs (latest)
+
+
 Clone YTDL
 
 ### Windows
-Create shortcut -> name: YouTube Downloader, target: c:/nwjs/nw.exe c:/nwjs/master_ytdl
+Create shortcut -> 
+
+
+name: YouTube Downloader
+
+
+target: c:/nwjs/nw.exe c:/nwjs/master_ytdl
 
 ### Linux 
 Create .desktop file ->
